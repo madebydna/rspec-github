@@ -12,3 +12,6 @@
 
 # Rubymine stuff
 .rakeTasks
+
+# ruby version manager artifacts
+.ruby-version

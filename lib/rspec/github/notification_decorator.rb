@@ -24,7 +24,7 @@ module RSpec
       end
 
       def path
-        File.realpath(raw_path).delete_prefix("#{workspace}#{File::SEPARATOR}")
+        File.realpath(raw_path).sub(/^#{workspace}#{File::SEPARATOR}/, '')
       end
 
       private
